@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2494601F-D285-4DB8-8D69-A5BFEC559148</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D845A05CC5036C0802DEF927559DC0F5788398BF</key>
+		<string>ssh://github.com/zhixuanlicai/zhicai2.0.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>zhicai/zhicai.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D845A05CC5036C0802DEF927559DC0F5788398BF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/zhixuanlicai/zhicai2.0.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D845A05CC5036C0802DEF927559DC0F5788398BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D845A05CC5036C0802DEF927559DC0F5788398BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>zhicai2.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
