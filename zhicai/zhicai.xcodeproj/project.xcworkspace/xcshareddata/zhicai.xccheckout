@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2494601F-D285-4DB8-8D69-A5BFEC559148</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>zhicai</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D845A05CC5036C0802DEF927559DC0F5788398BF</key>
 		<string>ssh://github.com/zhixuanlicai/zhicai2.0.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>zhicai/zhicai.xcodeproj/project.xcworkspace</string>
+	<string>zhicai/zhicai.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D845A05CC5036C0802DEF927559DC0F5788398BF</key>

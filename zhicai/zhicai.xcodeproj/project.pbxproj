@@ -38,7 +38,7 @@
 		81D10FAF1B9549F30053CA83 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 81D10FA41B9549F30053CA83 /* LICENSE */; };
 		81D10FB01B9549F30053CA83 /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 81D10FA51B9549F30053CA83 /* pop.wav */; };
 		81D10FB11B9549F30053CA83 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 81D10FA61B9549F30053CA83 /* README.md */; };
-		81D10FB51B9552CC0053CA83 /* CommonFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10FB41B9552CC0053CA83 /* CommonFunc.m */; };
+		81D10FBB1B9571EF0053CA83 /* CommonFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10FBA1B9571EF0053CA83 /* CommonFunc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,9 +111,9 @@
 		81D10FA51B9549F30053CA83 /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
 		81D10FA61B9549F30053CA83 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		81D10FB21B954B280053CA83 /* zhicai.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhicai.pch; sourceTree = "<group>"; };
-		81D10FB31B9552CC0053CA83 /* CommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunc.h; sourceTree = "<group>"; };
-		81D10FB41B9552CC0053CA83 /* CommonFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunc.m; sourceTree = "<group>"; };
-		81D10FB61B9553A40053CA83 /* Commondef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commondef.h; sourceTree = "<group>"; };
+		81D10FB81B9571EF0053CA83 /* Commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commondef.h; sourceTree = "<group>"; };
+		81D10FB91B9571EF0053CA83 /* CommonFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonFunc.h; sourceTree = "<group>"; };
+		81D10FBA1B9571EF0053CA83 /* CommonFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonFunc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,7 @@
 				81D10F241B9540090053CA83 /* Appdelegate */,
 				81D10F2B1B95418C0053CA83 /* Vendor */,
 				81D10F2E1B9544270053CA83 /* Base */,
-				81D10F2D1B9541F00053CA83 /* Commen */,
+				81D10FB71B9571EF0053CA83 /* Common */,
 				81D10F2C1B9541CC0053CA83 /* HttpTool */,
 				81D10F281B9540CD0053CA83 /* Model */,
 				81D10F291B9540FE0053CA83 /* View */,
@@ -249,16 +249,6 @@
 			path = HttpTool;
 			sourceTree = "<group>";
 		};
-		81D10F2D1B9541F00053CA83 /* Commen */ = {
-			isa = PBXGroup;
-			children = (
-				81D10FB31B9552CC0053CA83 /* CommonFunc.h */,
-				81D10FB41B9552CC0053CA83 /* CommonFunc.m */,
-				81D10FB61B9553A40053CA83 /* Commondef.h */,
-			);
-			path = Commen;
-			sourceTree = "<group>";
-		};
 		81D10F2E1B9544270053CA83 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +318,16 @@
 				81D10FA61B9549F30053CA83 /* README.md */,
 			);
 			path = ATMHud;
+			sourceTree = "<group>";
+		};
+		81D10FB71B9571EF0053CA83 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				81D10FB81B9571EF0053CA83 /* Commondef.h */,
+				81D10FB91B9571EF0053CA83 /* CommonFunc.h */,
+				81D10FBA1B9571EF0053CA83 /* CommonFunc.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,7 +446,7 @@
 				81D10F7D1B95456C0053CA83 /* AFHTTPRequestOperationManager.m in Sources */,
 				81D10F811B95456C0053CA83 /* AFURLConnectionOperation.m in Sources */,
 				81D10FAB1B9549F30053CA83 /* ATMHudView.m in Sources */,
-				81D10FB51B9552CC0053CA83 /* CommonFunc.m in Sources */,
+				81D10FBB1B9571EF0053CA83 /* CommonFunc.m in Sources */,
 				81D10F7C1B95456C0053CA83 /* AFHTTPRequestOperation.m in Sources */,
 				81D10F271B9540090053CA83 /* AppDelegate.m in Sources */,
 				81D10F921B9548070053CA83 /* UIColor+expanded.m in Sources */,

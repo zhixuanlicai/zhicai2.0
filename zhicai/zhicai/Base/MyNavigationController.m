@@ -32,7 +32,7 @@
     //通过appearance对象能修改整个项目中所有UINavigationBar的样式
     UINavigationBar * appearance = [UINavigationBar appearance];
     //设置导航栏背景
-    [appearance setBackgroundColor:[UIColor colorWithHexString:@"ffffff"]];
+    [appearance setBackgroundColor:[UIColor colorWithHexString:@"0074FF"]];
     //设置文字属性
     NSMutableDictionary * textAttrs = [NSMutableDictionary dictionary];
     textAttrs[UITextAttributeFont] = [UIFont fontWithName:@"STHeitiSC-Light" size:18.0];
