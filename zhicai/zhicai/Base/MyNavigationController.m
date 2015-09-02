@@ -11,7 +11,7 @@
 //当导航控制器的view创建完毕调用一次
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationBar setTintColor:[UIColor colorWithHexString:@"ff8400"]];
+    [self.navigationBar setTintColor:[UIColor colorWithHexString:@"0074FF"]];
 }
 
 //当第一次使用这个类的时候调用一次

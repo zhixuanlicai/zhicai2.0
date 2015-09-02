@@ -11,19 +11,4 @@
 - (void)backBtnAction:(id)sender;
 
 
-- (void)showBlockHubIndicator;
-- (void)hideBlockHubIdicator;
-
-- (void)showHubIndicatorWithTitle:(NSString*)title ShowActivity:(BOOL)showActivity Cancancel:(BOOL)canCancel;
-- (void)hideHubIndicator;
-
-- (void)showLongToast:(NSString*)msg;
-- (void)showShortToast:(NSString*)msg;
-- (void)showShortToastCenter:(NSString*)msg;
-
-
-- (void)showNoneTip:(NSString*)title Top:(int)top;
-- (void)hideNoneTip;
-- (void)showNoneTip2:(NSString*)title Top:(int)top;
-- (void)hideNoneTip2;
 @end
