@@ -23,6 +23,7 @@
 #import "UIColor+expanded.h"
 #import "CommonDef.h"
 #import "CommonFunc.h"
+#import "UIViewExt.h"
 
 
 #endif

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0341DF0A1B9D3212004C4F9E /* AddBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF031B9D3212004C4F9E /* AddBankViewController.m */; };
+		0341DF0B1B9D3212004C4F9E /* BankManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF051B9D3212004C4F9E /* BankManagerController.m */; };
+		0341DF0C1B9D3212004C4F9E /* MyassetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF071B9D3212004C4F9E /* MyassetViewController.m */; };
+		0341DF0D1B9D3212004C4F9E /* MyGiftcerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF091B9D3212004C4F9E /* MyGiftcerViewController.m */; };
+		0341DF161B9D322A004C4F9E /* BankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF0F1B9D322A004C4F9E /* BankTableViewCell.m */; };
+		0341DF171B9D322A004C4F9E /* MyassetTaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF111B9D322A004C4F9E /* MyassetTaCell.m */; };
+		0341DF181B9D322A004C4F9E /* MyassetTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF131B9D322A004C4F9E /* MyassetTopView.m */; };
+		0341DF191B9D322A004C4F9E /* MyGiftcerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF151B9D322A004C4F9E /* MyGiftcerCell.m */; };
+		0341DF1D1B9D3258004C4F9E /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF1C1B9D3258004C4F9E /* UIViewExt.m */; };
 		81D10F011B953F890053CA83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F001B953F890053CA83 /* main.m */; };
 		81D10F071B953F890053CA83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F061B953F890053CA83 /* ViewController.m */; };
 		81D10F0A1B953F890053CA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D10F081B953F890053CA83 /* Main.storyboard */; };
@@ -52,6 +61,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0341DF021B9D3212004C4F9E /* AddBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBankViewController.h; sourceTree = "<group>"; };
+		0341DF031B9D3212004C4F9E /* AddBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBankViewController.m; sourceTree = "<group>"; };
+		0341DF041B9D3212004C4F9E /* BankManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankManagerController.h; sourceTree = "<group>"; };
+		0341DF051B9D3212004C4F9E /* BankManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankManagerController.m; sourceTree = "<group>"; };
+		0341DF061B9D3212004C4F9E /* MyassetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyassetViewController.h; sourceTree = "<group>"; };
+		0341DF071B9D3212004C4F9E /* MyassetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyassetViewController.m; sourceTree = "<group>"; };
+		0341DF081B9D3212004C4F9E /* MyGiftcerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGiftcerViewController.h; sourceTree = "<group>"; };
+		0341DF091B9D3212004C4F9E /* MyGiftcerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGiftcerViewController.m; sourceTree = "<group>"; };
+		0341DF0E1B9D322A004C4F9E /* BankTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankTableViewCell.h; sourceTree = "<group>"; };
+		0341DF0F1B9D322A004C4F9E /* BankTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankTableViewCell.m; sourceTree = "<group>"; };
+		0341DF101B9D322A004C4F9E /* MyassetTaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyassetTaCell.h; sourceTree = "<group>"; };
+		0341DF111B9D322A004C4F9E /* MyassetTaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyassetTaCell.m; sourceTree = "<group>"; };
+		0341DF121B9D322A004C4F9E /* MyassetTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyassetTopView.h; sourceTree = "<group>"; };
+		0341DF131B9D322A004C4F9E /* MyassetTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyassetTopView.m; sourceTree = "<group>"; };
+		0341DF141B9D322A004C4F9E /* MyGiftcerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGiftcerCell.h; sourceTree = "<group>"; };
+		0341DF151B9D322A004C4F9E /* MyGiftcerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGiftcerCell.m; sourceTree = "<group>"; };
+		0341DF1B1B9D3258004C4F9E /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		0341DF1C1B9D3258004C4F9E /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		81D10EFB1B953F890053CA83 /* zhicai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhicai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D10EFF1B953F890053CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81D10F001B953F890053CA83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +161,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0341DF1A1B9D3258004C4F9E /* UIViewExt */ = {
+			isa = PBXGroup;
+			children = (
+				0341DF1B1B9D3258004C4F9E /* UIViewExt.h */,
+				0341DF1C1B9D3258004C4F9E /* UIViewExt.m */,
+			);
+			path = UIViewExt;
+			sourceTree = "<group>";
+		};
 		81D10EF21B953F890053CA83 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +255,14 @@
 		81D10F291B9540FE0053CA83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0341DF0E1B9D322A004C4F9E /* BankTableViewCell.h */,
+				0341DF0F1B9D322A004C4F9E /* BankTableViewCell.m */,
+				0341DF101B9D322A004C4F9E /* MyassetTaCell.h */,
+				0341DF111B9D322A004C4F9E /* MyassetTaCell.m */,
+				0341DF121B9D322A004C4F9E /* MyassetTopView.h */,
+				0341DF131B9D322A004C4F9E /* MyassetTopView.m */,
+				0341DF141B9D322A004C4F9E /* MyGiftcerCell.h */,
+				0341DF151B9D322A004C4F9E /* MyGiftcerCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +270,14 @@
 		81D10F2A1B9541090053CA83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0341DF021B9D3212004C4F9E /* AddBankViewController.h */,
+				0341DF031B9D3212004C4F9E /* AddBankViewController.m */,
+				0341DF041B9D3212004C4F9E /* BankManagerController.h */,
+				0341DF051B9D3212004C4F9E /* BankManagerController.m */,
+				0341DF061B9D3212004C4F9E /* MyassetViewController.h */,
+				0341DF071B9D3212004C4F9E /* MyassetViewController.m */,
+				0341DF081B9D3212004C4F9E /* MyGiftcerViewController.h */,
+				0341DF091B9D3212004C4F9E /* MyGiftcerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +285,7 @@
 		81D10F2B1B95418C0053CA83 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				0341DF1A1B9D3258004C4F9E /* UIViewExt */,
 				81D10F941B9549F30053CA83 /* ATMHud */,
 				81D10F8F1B9548070053CA83 /* Colorexpend */,
 				81D10F681B95456C0053CA83 /* AFNetworking */,
@@ -443,12 +496,21 @@
 				81D10FB11B9549F30053CA83 /* README.md in Sources */,
 				81D10FA91B9549F30053CA83 /* ATMHud.m in Sources */,
 				81D10FAC1B9549F30053CA83 /* ATMProgressLayer.m in Sources */,
+				0341DF0D1B9D3212004C4F9E /* MyGiftcerViewController.m in Sources */,
+				0341DF0B1B9D3212004C4F9E /* BankManagerController.m in Sources */,
+				0341DF161B9D322A004C4F9E /* BankTableViewCell.m in Sources */,
 				81D10F7D1B95456C0053CA83 /* AFHTTPRequestOperationManager.m in Sources */,
+				0341DF1D1B9D3258004C4F9E /* UIViewExt.m in Sources */,
+				0341DF171B9D322A004C4F9E /* MyassetTaCell.m in Sources */,
 				81D10F811B95456C0053CA83 /* AFURLConnectionOperation.m in Sources */,
 				81D10FAB1B9549F30053CA83 /* ATMHudView.m in Sources */,
 				81D10FBB1B9571EF0053CA83 /* CommonFunc.m in Sources */,
 				81D10F7C1B95456C0053CA83 /* AFHTTPRequestOperation.m in Sources */,
+				0341DF0C1B9D3212004C4F9E /* MyassetViewController.m in Sources */,
 				81D10F271B9540090053CA83 /* AppDelegate.m in Sources */,
+				0341DF191B9D322A004C4F9E /* MyGiftcerCell.m in Sources */,
+				0341DF181B9D322A004C4F9E /* MyassetTopView.m in Sources */,
+				0341DF0A1B9D3212004C4F9E /* AddBankViewController.m in Sources */,
 				81D10F921B9548070053CA83 /* UIColor+expanded.m in Sources */,
 				81D10FAD1B9549F30053CA83 /* ATMSoundFX.m in Sources */,
 				81D10F821B95456C0053CA83 /* AFURLRequestSerialization.m in Sources */,
@@ -658,6 +720,7 @@
 				81D10F201B953F890053CA83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81D10F211B953F890053CA83 /* Build configuration list for PBXNativeTarget "zhicaiTests" */ = {
 			isa = XCConfigurationList;
@@ -666,6 +729,7 @@
 				81D10F231B953F890053CA83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

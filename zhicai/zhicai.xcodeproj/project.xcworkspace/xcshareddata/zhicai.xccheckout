@@ -12,6 +12,8 @@
 	<dict>
 		<key>D845A05CC5036C0802DEF927559DC0F5788398BF</key>
 		<string>ssh://github.com/zhixuanlicai/zhicai2.0.git</string>
+		<key>d20a095c-7ae2-ff43-9ac9-48b5bcfd90d3++4224</key>
+		<string>https://risenb1.com01.net/svn/liyiliaoios/%25E6%25A2%25B5%25E9%259F%25B3%25E7%2591%259C%25E4%25BC%25BD/RisenbIOSClient/%25E5%2585%25AC%25E5%2585%25B1%25E7%25B1%25BB/%25E5%25B7%25A5%25E5%2585%25B7&amp;%25E7%25AC%25AC%25E4%25B8%2589%25E6%2596%25B9/UIViewExt</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>zhicai/zhicai.xcodeproj</string>
@@ -19,6 +21,13 @@
 	<dict>
 		<key>D845A05CC5036C0802DEF927559DC0F5788398BF</key>
 		<string>../../..</string>
+		<key>d20a095c-7ae2-ff43-9ac9-48b5bcfd90d3++4224</key>
+		<string>../../../../developer/zhicai/zhicai/Vendor/UIViewExt</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>d20a095c-7ae2-ff43-9ac9-48b5bcfd90d3++4224</key>
+		<string>https://risenb1.com01.net/svn/liyiliaoios</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/zhixuanlicai/zhicai2.0.git</string>
@@ -28,6 +37,14 @@
 	<string>D845A05CC5036C0802DEF927559DC0F5788398BF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>d20a095c-7ae2-ff43-9ac9-48b5bcfd90d3++4224</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIViewExt</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
