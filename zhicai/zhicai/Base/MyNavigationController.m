@@ -1,10 +1,5 @@
-//
-//  MyNavigationController.m
-//  JimuPiza
-//
-//  Created by 王燕燕 on 14/12/3.
-//  Copyright (c) 2014年 王燕燕. All rights reserved.
-//
+
+
 #import "MyNavigationController.h"
 
 @interface MyNavigationController ()
@@ -16,7 +11,7 @@
 //当导航控制器的view创建完毕调用一次
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationBar setTintColor:[UIColor colorWithHexString:@"ff8400"]];
+    [self.navigationBar setTintColor:[UIColor colorWithHexString:@"0074FF"]];
 }
 
 //当第一次使用这个类的时候调用一次
@@ -32,7 +27,7 @@
     //通过appearance对象能修改整个项目中所有UINavigationBar的样式
     UINavigationBar * appearance = [UINavigationBar appearance];
     //设置导航栏背景
-    [appearance setBackgroundColor:[UIColor colorWithHexString:@"ffffff"]];
+    [appearance setBackgroundColor:[UIColor colorWithHexString:@"0074FF"]];
     //设置文字属性
     NSMutableDictionary * textAttrs = [NSMutableDictionary dictionary];
     textAttrs[UITextAttributeFont] = [UIFont fontWithName:@"STHeitiSC-Light" size:18.0];
