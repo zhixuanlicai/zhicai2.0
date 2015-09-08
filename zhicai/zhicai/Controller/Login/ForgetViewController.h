@@ -8,6 +8,12 @@
 
 #import "BaseViewController.h"
 
+#define TimeFCount 60
+
+#define DateFSave @"DateFSave"
+
 @interface ForgetViewController : BaseViewController
+
+- (id)initWithIdentifer:(NSString *)identifer;
 
 @end

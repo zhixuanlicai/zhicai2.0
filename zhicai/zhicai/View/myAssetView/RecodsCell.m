@@ -29,10 +29,10 @@
     UIImageView *lineIMG = [CommonFunc creatImgeViewRect:CGRectMake(0, 74, mScreenWidth, 1) Color:[UIColor lightGrayColor] Img:nil alpha:.5];
     [baseView addSubview:lineIMG];
     
-    UIImageView *leftIMG = [CommonFunc creatImgeViewRect:CGRectMake(11, 26, 23, 23) Color:[UIColor blackColor] Img:nil alpha:1];
+    UIImageView *leftIMG = [CommonFunc creatImgeViewRect:CGRectMake(11, 26, 23, 23) Color:[UIColor clearColor] Img:@"xtuibiao" alpha:1];
     [baseView addSubview:leftIMG];
     
-    UIImageView *rightIMG = [CommonFunc creatImgeViewRect:CGRectMake(baseView.width - 22, 28, 11, 19) Color:[UIColor blackColor] Img:nil alpha:1];
+    UIImageView *rightIMG = [CommonFunc creatImgeViewRect:CGRectMake(baseView.width - 22, 29, 11, 17) Color:[UIColor clearColor] Img:@"dsfcsdxz" alpha:1];
     [baseView addSubview:rightIMG];
     
     //交易状态

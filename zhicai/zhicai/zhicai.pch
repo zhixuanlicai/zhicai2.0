@@ -25,5 +25,6 @@
 #import "CommonFunc.h"
 #import "UIViewExt.h"
 #import "AppDelegate.h"
+#import "SaveCachesFile.h"
 
 #endif

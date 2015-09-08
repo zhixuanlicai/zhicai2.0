@@ -62,8 +62,15 @@
     {
         cell = [[MyGiftcerCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:gCell];
         cell.backgroundColor = [UIColor clearColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning {

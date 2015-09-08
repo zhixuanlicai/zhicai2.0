@@ -31,6 +31,10 @@
     [view addSubview:lineImg];
     
     self.leftIMG = [CommonFunc creatImgeViewRect:CGRectMake(10, (view.height - 20)/2, 20, 20) Color:[UIColor blackColor] Img:nil alpha:1];
+    self.leftIMG.layer.masksToBounds = YES;
+    self.leftIMG.layer.cornerRadius = 10.0;
+    self.leftIMG.layer.borderWidth = 10.0;
+    self.leftIMG.layer.borderColor = [UIColor clearColor].CGColor;
     [view addSubview:self.leftIMG];
     
     self.rightIMG = [CommonFunc creatImgeViewRect:CGRectMake(view.width - 20, 14, 20, 16) Color:[UIColor blackColor] Img:nil alpha:1];

@@ -172,6 +172,7 @@
     {
         cell = [[BankTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:bCell];
         cell.backgroundColor = [UIColor clearColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     cell.delegate = self;
     if ([self.delStr isEqualToString:@"2"])

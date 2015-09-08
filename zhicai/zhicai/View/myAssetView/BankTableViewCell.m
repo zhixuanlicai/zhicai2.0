@@ -29,6 +29,10 @@
 {
     self.bottomView = [[UIView alloc]initWithFrame:CGRectMake(20, 10, mScreenWidth - 40, 165)];
     self.bottomView.backgroundColor = [UIColor whiteColor];
+    self.bottomView.layer.masksToBounds = YES;
+    self.bottomView.layer.cornerRadius = 6.0;
+    self.bottomView.layer.borderWidth = .2;
+    self.bottomView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     [self addSubview:self.bottomView];
     
     UIImageView *leftIMG = [CommonFunc creatImgeViewRect:CGRectMake(20, 20, 26, 26) Color:[UIColor grayColor] Img:nil alpha:1];

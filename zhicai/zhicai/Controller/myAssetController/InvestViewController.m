@@ -33,7 +33,7 @@
     topView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:topView];
     
-    UIImageView *rightIMG = [CommonFunc creatImgeViewRect:CGRectMake(mScreenWidth - 21, 13, 10, 18) Color:[UIColor blackColor] Img:nil alpha:1];
+    UIImageView *rightIMG = [CommonFunc creatImgeViewRect:CGRectMake(mScreenWidth - 20, 14, 9, 15) Color:[UIColor clearColor] Img:@"dsfcsdxz" alpha:1];
     [topView addSubview:rightIMG];
     
     UILabel *tyLabel = [CommonFunc createLabel:@"产品名称" FontSize:15 TextColor:[UIColor colorWithHexString:@"4C595D"]  Rect:CGRectMake(11, 12, 150, 20) Align:NSTextAlignmentLeft];
@@ -79,7 +79,7 @@
     UILabel *bLab = [CommonFunc createLabel:@"标的详情" FontSize:15 TextColor:[UIColor colorWithHexString:@"4C595D"] Rect:CGRectMake(11, 11, 150, 20) Align:NSTextAlignmentLeft];
     [bottomView addSubview:bLab];
     
-    UIImageView *rigthIMG = [CommonFunc creatImgeViewRect:CGRectMake(mScreenWidth - 25, 12, 14, 19) Color:[UIColor blackColor] Img:nil alpha:1];
+    UIImageView *rigthIMG = [CommonFunc creatImgeViewRect:CGRectMake(mScreenWidth - 25, 13, 11, 17) Color:[UIColor clearColor] Img:@"dsfcsdxz" alpha:1];
     [bottomView addSubview:rigthIMG];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(detailTouchUpInside:)];

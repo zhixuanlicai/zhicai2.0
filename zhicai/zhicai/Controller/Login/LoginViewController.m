@@ -52,7 +52,7 @@
     topView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:topView];
     
-    UILabel * userLab = [CommonFunc createLabel:@"账号" FontSize:14 TextColor:[UIColor colorWithHexString:@"4C595D"] Rect:CGRectMake(11, 0, 30, 44)  Align:NSTextAlignmentLeft];
+    UILabel * userLab = [CommonFunc createLabel:@"账号" FontSize:14 TextColor:[UIColor colorWithHexString:@"4C595D"] Rect:CGRectMake(11, 0, 80, 44)  Align:NSTextAlignmentLeft];
    
     [topView addSubview:userLab];
     
@@ -67,7 +67,7 @@
     UIImageView *lineIMG = [CommonFunc creatImgeViewRect:CGRectMake(0, 44, mScreenWidth, 1) Color:[UIColor colorWithHexString:@"D4D4D4"] Img:nil alpha:1];
     [topView addSubview:lineIMG];
     
-    UILabel * pwdLab = [CommonFunc createLabel:@"密码" FontSize:15 TextColor:[UIColor colorWithHexString:@"4C595D"] Rect:CGRectMake(11, 45, 30, 44) Align:NSTextAlignmentLeft];
+    UILabel * pwdLab = [CommonFunc createLabel:@"密码" FontSize:15 TextColor:[UIColor colorWithHexString:@"4C595D"] Rect:CGRectMake(11, 45, 80, 44) Align:NSTextAlignmentLeft];
     [topView addSubview:pwdLab];
     
     pwdFiled = [CommonFunc createTextFieldFrame:CGRectMake(100, 45, 150, 44) Placeholder:@"请输入登录密码" leftView:nil rightView:nil BgImageName:nil font:15];
@@ -101,7 +101,7 @@
 
 - (void)forgetClick
 {
-    ForgetViewController *forVC = [[ForgetViewController alloc]init];
+    ForgetViewController *forVC = [[ForgetViewController alloc]initWithIdentifer:@"1"];
     [self.navigationController pushViewController:forVC animated:YES];
 }
 

@@ -8,6 +8,13 @@
 
 #import "BaseViewController.h"
 
+#define TimeCount 60
+
+#define DateSave @"DateSave"
+#define CodeSave @"CodeSave"
+
 @interface RegisterViewController : BaseViewController
+
+@property (nonatomic , strong) NSTimer *codeTimer;
 
 @end

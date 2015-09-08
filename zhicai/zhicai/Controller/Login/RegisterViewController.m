@@ -18,8 +18,7 @@
     UIButton * nextBtn;
     UIButton * getBtn;//发送验证码
 }
-
-@property (nonatomic , strong) NSTimer *codeTimer;
+ 
 
 @end
 
@@ -43,6 +42,9 @@
                                              selector:@selector(keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
+    
+    //初始化定时器
+    self.codeTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timeFired:) userInfo:nil repeats:YES];
     
     [self creatSubViews];
 }
@@ -96,7 +98,6 @@
     getBtn.layer.borderColor = [[UIColor colorWithHexString:@"0074FF"]CGColor];
     getBtn.layer.borderWidth = 1.0f;
     
-    [getBtn setTitle:@"发送验证码" forState:UIControlStateNormal];
     [topView addSubview:getBtn];
     
     
@@ -105,11 +106,61 @@
 
 }
 
+//定时器
+- (void)timeFired:(NSTimer *)timer
+{
+    if ([self loadCodeTime])
+    {
+        NSInteger cha = [self  now:[NSDate date] before:[self loadCodeTime]];
+        if (cha < TimeCount)
+        {
+            getBtn.enabled = NO;
+            nextBtn.enabled = NO;
+            [getBtn setTitle:[NSString stringWithFormat:@"重发(%@s)",@(TimeCount - cha)] forState:UIControlStateNormal];
+            clewLab.text = @"验证码短信(免费)已发送";
+        }
+        else
+        {
+            getBtn.enabled = YES;
+            nextBtn.enabled = YES;
+            if (TimeCount - cha == 0)
+            {
+                [getBtn setTitle:@"重获验证码" forState:UIControlStateNormal];
+            }
+            clewLab.text = @"获取短信(免费)验证码";
+        }
+    }
+}
+
+#pragma mark 验证码发送保存
+- (void)saveCodeTime
+{
+    [SaveCachesFile saveDataList:[NSDate date] fileName:DateSave];
+}
+
+- (NSDate *)loadCodeTime
+{
+    return [SaveCachesFile loadDataList:DateSave];
+}
+
+- (NSInteger)now:(NSDate *)now before:(NSDate *)before
+{
+    NSTimeInterval late = [before timeIntervalSince1970]*1;
+    NSTimeInterval nowInt = [now timeIntervalSince1970]*1;
+    
+    NSTimeInterval cha = nowInt - late;
+    return cha;
+}
+
 //获取验证码
 - (void)getClick
 {
-   clewLab.text = @"验证码短信(免费)已发送";
+    //重发计时
+    [self saveCodeTime];
     
+
+   clewLab.text = @"验证码短信(免费)已发送";
+
 }
 
 //立即注册

@@ -29,6 +29,7 @@
 		03A9ACAB1B9EACE100437FD4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACAA1B9EACE100437FD4 /* RegisterViewController.m */; };
 		03A9ACAE1B9EAE4D00437FD4 /* NewSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACAD1B9EAE4D00437FD4 /* NewSetViewController.m */; };
 		03A9ACB11B9EAE8F00437FD4 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACB01B9EAE8F00437FD4 /* ForgetViewController.m */; };
+		03A9ACB61B9ECC7B00437FD4 /* SaveCachesFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACB51B9ECC7B00437FD4 /* SaveCachesFile.m */; };
 		81D10F011B953F890053CA83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F001B953F890053CA83 /* main.m */; };
 		81D10F071B953F890053CA83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F061B953F890053CA83 /* ViewController.m */; };
 		81D10F0A1B953F890053CA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D10F081B953F890053CA83 /* Main.storyboard */; };
@@ -116,6 +117,8 @@
 		03A9ACAD1B9EAE4D00437FD4 /* NewSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSetViewController.m; sourceTree = "<group>"; };
 		03A9ACAF1B9EAE8F00437FD4 /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
 		03A9ACB01B9EAE8F00437FD4 /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
+		03A9ACB41B9ECC7B00437FD4 /* SaveCachesFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveCachesFile.h; sourceTree = "<group>"; };
+		03A9ACB51B9ECC7B00437FD4 /* SaveCachesFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveCachesFile.m; sourceTree = "<group>"; };
 		81D10EFB1B953F890053CA83 /* zhicai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhicai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D10EFF1B953F890053CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81D10F001B953F890053CA83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -265,6 +268,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		03A9ACB31B9ECC3700437FD4 /* SaveCaches */ = {
+			isa = PBXGroup;
+			children = (
+				03A9ACB41B9ECC7B00437FD4 /* SaveCachesFile.h */,
+				03A9ACB51B9ECC7B00437FD4 /* SaveCachesFile.m */,
+			);
+			name = SaveCaches;
+			sourceTree = "<group>";
+		};
 		81D10EF21B953F890053CA83 = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +362,7 @@
 		81D10F291B9540FE0053CA83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				03A9ACB31B9ECC3700437FD4 /* SaveCaches */,
 				0341DF511B9DB3D5004C4F9E /* myAssetView */,
 			);
 			path = View;
@@ -602,6 +615,7 @@
 				81D10FBB1B9571EF0053CA83 /* CommonFunc.m in Sources */,
 				81D10F7C1B95456C0053CA83 /* AFHTTPRequestOperation.m in Sources */,
 				81D10F271B9540090053CA83 /* AppDelegate.m in Sources */,
+				03A9ACB61B9ECC7B00437FD4 /* SaveCachesFile.m in Sources */,
 				81D10F921B9548070053CA83 /* UIColor+expanded.m in Sources */,
 				0341DF611B9DB3D5004C4F9E /* CBankTableViewCell.m in Sources */,
 				81D10FAD1B9549F30053CA83 /* ATMSoundFX.m in Sources */,

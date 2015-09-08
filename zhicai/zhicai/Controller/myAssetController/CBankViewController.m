@@ -81,13 +81,13 @@
     
     if (self.whichIndex == indexPath.row)
     {
-        cell.nameLabel.textColor = [UIColor blackColor];
+        cell.nameLabel.textColor = [UIColor colorWithHexString:@"4D595D"];
         cell.leftIMG.backgroundColor = [UIColor redColor];
         cell.rightIMG.backgroundColor = [UIColor redColor];
     }
     else
     {
-        cell.nameLabel.textColor = [UIColor colorWithHexString:@"A6ACAE"];
+        cell.nameLabel.textColor = [UIColor lightGrayColor];
         cell.leftIMG.backgroundColor = [UIColor blackColor];
         cell.rightIMG.backgroundColor = [UIColor blackColor];
     }

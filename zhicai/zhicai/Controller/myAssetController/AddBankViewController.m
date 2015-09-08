@@ -68,7 +68,7 @@
     [bankView addSubview:view];
     view.backgroundColor = [UIColor whiteColor];
     
-    UILabel * userLab = [CommonFunc createLabel:@"姓名" FontSize:15 TextColor:[UIColor blackColor] Rect:CGRectMake(11, 0, 30, 44) Align:NSTextAlignmentLeft];
+    UILabel * userLab = [CommonFunc createLabel:@"姓名" FontSize:15 TextColor:[UIColor colorWithHexString:@"4D595D"] Rect:CGRectMake(11, 0, 30, 44) Align:NSTextAlignmentLeft];
     [view addSubview:userLab];
     
     nameFiled = [CommonFunc createTextFieldFrame:CGRectMake(90, 0, mScreenWidth - 11 - 90, 44) Placeholder:@"请输入持卡人姓名" leftView:nil rightView:nil BgImageName:nil font:15];
@@ -80,7 +80,7 @@
     lineView.backgroundColor = [UIColor colorWithHexString:@"D4D4D4"];
     [view addSubview:lineView];
     
-    UILabel * pwdLab = [CommonFunc createLabel:@"身份证" FontSize:15 TextColor:[UIColor blackColor] Rect:CGRectMake(11, 44, 50, 44) Align:NSTextAlignmentLeft];
+    UILabel * pwdLab = [CommonFunc createLabel:@"身份证" FontSize:15 TextColor:[UIColor colorWithHexString:@"4D595D"] Rect:CGRectMake(11, 44, 50, 44) Align:NSTextAlignmentLeft];
     [view addSubview:pwdLab];
 
     shenfenFiled = [CommonFunc createTextFieldFrame:CGRectMake(90, 44,mScreenWidth - 11 - 90, 44) Placeholder:@"请输入持卡人身份证号" leftView:nil rightView:nil BgImageName:nil font:15];
@@ -98,7 +98,7 @@
     UIView * view1 = [[UIView alloc]initWithFrame:CGRectMake(0, 194, mScreenWidth, 88)];
     [bankView addSubview:view1];
     view1.backgroundColor = [UIColor whiteColor];
-    UILabel * bankLab = [CommonFunc createLabel:@"银行" FontSize:15 TextColor:[UIColor blackColor] Rect:CGRectMake(11, 0, 30, 44) Align:NSTextAlignmentLeft ];
+    UILabel * bankLab = [CommonFunc createLabel:@"银行" FontSize:15 TextColor:[UIColor colorWithHexString:@"4D595D"] Rect:CGRectMake(11, 0, 30, 44) Align:NSTextAlignmentLeft ];
     bankLab.textAlignment = YES;
     [view1 addSubview:bankLab];
     
@@ -115,7 +115,7 @@
     lineView3.backgroundColor = [UIColor colorWithHexString:@"D4D4D4"];
     [view1 addSubview:lineView3];
     
-    UILabel * kaLab = [CommonFunc createLabel:@"卡号" FontSize:15 TextColor:[UIColor blackColor] Rect:CGRectMake(11, 44, 30, 44) Align:NSTextAlignmentLeft];
+    UILabel * kaLab = [CommonFunc createLabel:@"卡号" FontSize:15 TextColor:[UIColor colorWithHexString:@"4D595D"] Rect:CGRectMake(11, 44, 30, 44) Align:NSTextAlignmentLeft];
     [view1 addSubview:kaLab];
     
     kaFiled = [CommonFunc createTextFieldFrame:CGRectMake(90, 44, mScreenWidth - 11 - 90, 44) Placeholder:@"请输入银行卡号" leftView:nil rightView:nil BgImageName:nil font:15];
