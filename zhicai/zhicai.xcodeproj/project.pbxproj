@@ -26,6 +26,7 @@
 		0341DF661B9DB3D5004C4F9E /* RecodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF5F1B9DB3D5004C4F9E /* RecodsCell.m */; };
 		0341DF7D1B9DB6A3004C4F9E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF7C1B9DB6A3004C4F9E /* LoginViewController.m */; };
 		0341DF7F1B9DB81F004C4F9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0341DF7E1B9DB81F004C4F9E /* Images.xcassets */; };
+		11E23A3B1B9ED047009890D1 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E23A3A1B9ED047009890D1 /* SetViewController.m */; };
 		81D10F011B953F890053CA83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F001B953F890053CA83 /* main.m */; };
 		81D10F071B953F890053CA83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F061B953F890053CA83 /* ViewController.m */; };
 		81D10F0A1B953F890053CA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D10F081B953F890053CA83 /* Main.storyboard */; };
@@ -107,6 +108,8 @@
 		0341DF7B1B9DB6A3004C4F9E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0341DF7C1B9DB6A3004C4F9E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0341DF7E1B9DB81F004C4F9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		11E23A391B9ED047009890D1 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		11E23A3A1B9ED047009890D1 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
 		81D10EFB1B953F890053CA83 /* zhicai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhicai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D10EFF1B953F890053CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81D10F001B953F890053CA83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -250,6 +253,29 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		11E23A2D1B9ECEC0009890D1 /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		11E23A371B9ED005009890D1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		11E23A381B9ED03C009890D1 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				11E23A391B9ED047009890D1 /* SetViewController.h */,
+				11E23A3A1B9ED047009890D1 /* SetViewController.m */,
+			);
+			name = Set;
+			sourceTree = "<group>";
+		};
 		81D10EF21B953F890053CA83 = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +369,9 @@
 		81D10F2A1B9541090053CA83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				11E23A381B9ED03C009890D1 /* Set */,
+				11E23A371B9ED005009890D1 /* List */,
+				11E23A2D1B9ECEC0009890D1 /* home */,
 				0341DF7A1B9DB5BC004C4F9E /* Login */,
 				0341DF381B9DB39D004C4F9E /* myAssetController */,
 			);
@@ -591,6 +620,7 @@
 				0341DF7D1B9DB6A3004C4F9E /* LoginViewController.m in Sources */,
 				0341DF4E1B9DB39D004C4F9E /* MyGiftcerViewController.m in Sources */,
 				81D10F821B95456C0053CA83 /* AFURLRequestSerialization.m in Sources */,
+				11E23A3B1B9ED047009890D1 /* SetViewController.m in Sources */,
 				81D10F7E1B95456C0053CA83 /* AFHTTPSessionManager.m in Sources */,
 				81D10F7F1B95456C0053CA83 /* AFNetworkReachabilityManager.m in Sources */,
 				81D10F831B95456C0053CA83 /* AFURLResponseSerialization.m in Sources */,
