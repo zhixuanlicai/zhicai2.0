@@ -21,4 +21,17 @@
                            leftView:(UIView*)leftView rightView:(UIView*)rightView BgImageName:(NSString*)bgImageName font:(float)font;
 //资产格式
 + (NSString *)numFormatMoney:(CGFloat)money numberStyle:(NSNumberFormatterStyle)style;
++(UIButton*)createButtonFrame:(CGRect)frame Title:(NSString*)title TitleColor:(UIColor *)color BgColor:(UIColor *)bgColor BgImageName:(NSString*)bgImageName ImageName:(NSString*)imageName  SeleImage:(NSString *)sImage Method:(SEL)sel target:(id)target;
+//导航栏右侧按钮
++ (UIBarButtonItem *)customBarButtonItemTarget:(id)target width:(CGFloat)width height:(CGFloat)height action:(SEL)action string:(NSString *)string color:(UIColor *)color ImageName:(NSString *)image;
+//验证身份证是否合法
++(BOOL)checkIdentityCardNo:(NSString *)cardNo;
+//交易记录通用
++ (UIView *)creatCellView:(NSString *)name rightTxt:(NSString *)text top:(CGFloat)top;
+
+//返回按钮
++ (UIBarButtonItem *)backBarButtonItemTarget:(id)target action:(SEL)action;
+
++ (UIBarButtonItem *)customBarButtonItemTarget:(id)target action:(SEL)action string:(NSString *)string;
+
 @end

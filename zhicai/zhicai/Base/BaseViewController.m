@@ -24,7 +24,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor colorWithHexString:@"f6f6f6"]];
+    [self.view setBackgroundColor:[UIColor colorWithHexString:@"F0EFF5"]];
     // Do any additional setup after loading the view.
 }
 

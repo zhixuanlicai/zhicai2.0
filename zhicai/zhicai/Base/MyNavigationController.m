@@ -11,7 +11,29 @@
 //当导航控制器的view创建完毕调用一次
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationBar setTintColor:[UIColor colorWithHexString:@"0074FF"]];
+//    [self.navigationBar setBarTintColor:[UIColor colorWithHexString:@"0074FF"]];
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+        
+    {
+        
+        self.navigationBar.barTintColor = [UIColor colorWithHexString:@"0074FF"];
+        
+        self.navigationBar.translucent = NO;
+        
+    }
+    
+    else
+        
+    {
+        
+        self.navigationBar.tintColor = [UIColor colorWithHexString:@"0074FF"];
+        
+    }
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 //当第一次使用这个类的时候调用一次
@@ -31,7 +53,7 @@
     //设置文字属性
     NSMutableDictionary * textAttrs = [NSMutableDictionary dictionary];
     textAttrs[UITextAttributeFont] = [UIFont fontWithName:@"STHeitiSC-Light" size:18.0];
-    textAttrs[UITextAttributeTextColor] = [UIColor colorWithHexString:@"3a3a3a"];
+    textAttrs[UITextAttributeTextColor] = [UIColor colorWithHexString:@"ffffff"];
     //UIOffsetZero是结构体，只能包装成对象才能放在字典中
     textAttrs[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
     [appearance setTitleTextAttributes:textAttrs];

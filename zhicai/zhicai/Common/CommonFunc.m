@@ -126,4 +126,122 @@
     return textField;
 }
 
++(UIButton*)createButtonFrame:(CGRect)frame Title:(NSString*)title TitleColor:(UIColor *)color BgColor:(UIColor *)bgColor BgImageName:(NSString*)bgImageName ImageName:(NSString*)imageName  SeleImage:(NSString *)sImage Method:(SEL)sel target:(id)target
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = frame;
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:color forState:UIControlStateNormal];
+    [button setBackgroundColor:bgColor];
+    [button setBackgroundImage:[UIImage imageNamed:bgImageName] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:sImage] forState:UIControlStateSelected];
+    [button addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+
++ (UIBarButtonItem *)customBarButtonItemTarget:(id)target width:(CGFloat)width height:(CGFloat)height action:(SEL)action string:(NSString *)string color:(UIColor *)color ImageName:(NSString *)image
+{
+//    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 60, 35)];
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(0, 0, width, height);
+    button.backgroundColor = color;
+    [button setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+//    CGSize size = [string sizeWithFont:[UIFont systemFontOfSize:17]];
+//    if(size.width > view.width)
+//    {
+//        button.titleLabel.font = [UIFont systemFontOfSize:15];
+//        button.titleLabel.textAlignment = NSTextAlignmentLeft;
+//        button.frame=CGRectMake(-10, 12, string.length * 15, 15);
+//    }
+//    else
+//    {
+//        button.titleLabel.font = [UIFont systemFontOfSize:17];
+//        button.titleLabel.textAlignment = NSTextAlignmentCenter;
+//        button.frame=CGRectMake(0, 12, string.length * 17 + 10, 17);
+//    }
+    
+    button.titleLabel.textColor = color;
+    [button setTitleColor:color forState:UIControlStateNormal];
+    [button setTitle:string forState:UIControlStateNormal];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+//    [view addSubview:button];
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
+
++(BOOL)checkIdentityCardNo:(NSString *)cardNo
+{
+    if (cardNo.length != 18)
+    {
+        return NO;
+    }
+    NSArray *codeArray = [NSArray arrayWithObjects:@"7",@"9",@"10",@"5",@"8",@"4",@"2",@"1",@"6",@"3",@"7",@"9",@"10",@"5",@"8",@"4",@"2", nil];
+    NSDictionary *checkCodeDic = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"1",@"0",@"X",@"9",@"8",@"7",@"6",@"5",@"4",@"3",@"2", nil] forKeys:[NSArray arrayWithObjects:@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10", nil]];
+    
+    NSScanner *scan = [NSScanner scannerWithString:[cardNo substringToIndex:17]];
+    
+    int val;
+    BOOL isNum = [scan scanInt:&val] &&[scan isAtEnd];
+    if (!isNum)
+    {
+        return NO;
+    }
+    
+    int sumValue = 0;
+    for (int i = 0; i < 17; i ++)
+    {
+        sumValue += [[cardNo substringWithRange:NSMakeRange(i, 1)]intValue] *[[codeArray objectAtIndex:i]intValue];
+    }
+    
+    NSString *strlast =[checkCodeDic objectForKey:[NSString stringWithFormat:@"%@",@(sumValue % 11)]];//:[NSString stringWithFormat:@"%d",sumValue % 11]
+    
+    if ([strlast isEqualToString:[[cardNo substringWithRange:NSMakeRange(17, 1)]uppercaseString]])
+    {
+        return YES;
+    }
+    
+    return NO;
+}
+
+
++ (UIView *)creatCellView:(NSString *)name rightTxt:(NSString *)text top:(CGFloat)top
+{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, top, mScreenWidth, 44)];
+    view.backgroundColor = [UIColor whiteColor];
+    
+    UILabel *nameLab = [CommonFunc createLabel:name FontSize:15 TextColor:[UIColor colorWithHexString:@"4C595D"] Rect:CGRectMake(11, 11, 150, 20) Align:NSTextAlignmentLeft];
+    [view addSubview:nameLab];
+    
+    UILabel *rightLabel = [CommonFunc createLabel:text FontSize:12 TextColor:[UIColor colorWithHexString:@"878787"] Rect:CGRectMake(view.width - 161, 15, 150, 14) Align:NSTextAlignmentRight];
+    [view addSubview:rightLabel];
+    
+    UIImageView *linIMG = [CommonFunc creatImgeViewRect:CGRectMake(3, 43, view.width - 6, 1) Color:[UIColor lightGrayColor] Img:nil alpha:.5];
+    [view addSubview:linIMG];
+    
+    return view;
+}
+
++ (UIBarButtonItem *)backBarButtonItemTarget:(id)target action:(SEL)action
+{
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundImage:[UIImage imageNamed:@"share_5"] forState:UIControlStateNormal];
+    button.frame=CGRectMake(0, 0, 40, 35);
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
++ (UIBarButtonItem *)customBarButtonItemTarget:(id)target action:(SEL)action string:(NSString *)string
+{
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor clearColor];
+    button.frame=CGRectMake(0, 0, 60, 20);
+    button.titleLabel.font = [UIFont systemFontOfSize:14];
+    button.titleLabel.textColor = [UIColor whiteColor];
+    [button setTitle:string forState:UIControlStateNormal];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
 @end

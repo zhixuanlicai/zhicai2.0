@@ -16,8 +16,7 @@
 #define mTabBarHeight 49
 #define kToolTabHeight  44
 
-#define gAppDelegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
-
+#define APPDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 #define mScreenWidth [[UIScreen mainScreen] bounds].size.width
 #define mScreenHeight ([[UIScreen mainScreen] bounds].size.height)
