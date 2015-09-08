@@ -22,7 +22,9 @@
 {
     [super viewDidLoad];
     
-    self.title = @"交易记录"; 
+    self.title = @"交易记录";
+    
+    self.navigationItem.leftBarButtonItem = [CommonFunc backBarButtonItemTarget:self action:@selector(backBtnAction:)];
     
     [self creatTablView];
 }

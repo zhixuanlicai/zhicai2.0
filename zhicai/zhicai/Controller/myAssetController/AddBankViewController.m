@@ -30,7 +30,7 @@
   
     self.title = @"添加银行卡";
     
-    self.view.backgroundColor = [UIColor colorWithHexString:@"F0EFF5"];
+    self.navigationItem.leftBarButtonItem = [CommonFunc backBarButtonItemTarget:self action:@selector(backBtnAction:)];
     
     [self creatSubViews];
     
@@ -124,7 +124,7 @@
     kaFiled.keyboardType = UIKeyboardTypeNumberPad;//数字键盘
     [view1 addSubview:kaFiled];
 
-    bangdingBtn = [CommonFunc createButtonFrame:CGRectMake(0, mScreenHeight-49-mStatusBarOffset, mScreenWidth, 49) Title:@"绑定" TitleColor:[UIColor whiteColor]  BgColor:[UIColor colorWithHexString:@"A3A3A3"] BgImageName:nil ImageName:nil SeleImage:nil Method:@selector(sureClick) target:self];
+    bangdingBtn = [CommonFunc createButtonFrame:CGRectMake(0, mScreenHeight-49-mStatusBarOffset, mScreenWidth, 49) Title:@"绑定" TitleColor:[UIColor whiteColor] font:15 BgColor:[UIColor colorWithHexString:@"A3A3A3"] BgImageName:nil ImageName:nil SeleImage:nil Method:@selector(sureClick) target:self];
     bangdingBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
     bangdingBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.view addSubview:bangdingBtn];

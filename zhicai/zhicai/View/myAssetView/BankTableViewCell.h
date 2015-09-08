@@ -16,9 +16,7 @@
 
 @interface BankTableViewCell : UITableViewCell
 
-@property (nonatomic, strong)  UIView *bottomView;
-
-@property (nonatomic, strong) UIButton *delBtn;
+@property (nonatomic, strong)  UIView *bottomView; 
 
 @property (nonatomic, strong) NSString *Model;
 

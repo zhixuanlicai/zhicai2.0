@@ -27,9 +27,6 @@
 
 - (void)creatSubViews
 {
-    self.delBtn = [CommonFunc createButtonFrame:CGRectMake(11,165/2, 24, 24) Title:nil TitleColor:nil BgColor:[UIColor redColor] BgImageName:nil ImageName:nil SeleImage:nil Method:@selector(delAction:) target:self];
-    [self addSubview:self.delBtn];
-    
     self.bottomView = [[UIView alloc]initWithFrame:CGRectMake(20, 10, mScreenWidth - 40, 165)];
     self.bottomView.backgroundColor = [UIColor whiteColor];
     [self addSubview:self.bottomView];

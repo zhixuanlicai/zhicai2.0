@@ -27,6 +27,8 @@
     
     self.title = @"选择银行";
     
+    self.navigationItem.leftBarButtonItem = [CommonFunc backBarButtonItemTarget:self action:@selector(backBtnAction:)];
+    
     [self creatTableView];
     
     [self addSureButton];
@@ -35,7 +37,7 @@
 
 - (void)addSureButton
 {
-    self.sureBtn = [CommonFunc createButtonFrame:CGRectMake(0, mScreenHeight-49-mStatusBarOffset, mScreenWidth, 49) Title:@"确认" TitleColor:[UIColor whiteColor]  BgColor:[UIColor colorWithHexString:@"A3A3A3"] BgImageName:nil ImageName:nil SeleImage:nil Method:@selector(sureClickTouchUpInside:) target:self];
+    self.sureBtn = [CommonFunc createButtonFrame:CGRectMake(0, mScreenHeight-49-mStatusBarOffset, mScreenWidth, 49) Title:@"确认" TitleColor:[UIColor whiteColor] font:15 BgColor:[UIColor colorWithHexString:@"A3A3A3"] BgImageName:nil ImageName:nil SeleImage:nil Method:@selector(sureClickTouchUpInside:) target:self];
     [self.view addSubview:self.sureBtn];
 }
 

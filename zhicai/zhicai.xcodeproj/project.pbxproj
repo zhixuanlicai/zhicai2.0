@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0341DF1D1B9D3258004C4F9E /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF1C1B9D3258004C4F9E /* UIViewExt.m */; };
-		0341DF261B9D7E4B004C4F9E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF251B9D7E4B004C4F9E /* TabBarViewController.m */; };
+		0341DF261B9D7E4B004C4F9E /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF251B9D7E4B004C4F9E /* BaseTabBarViewController.m */; };
 		0341DF491B9DB39D004C4F9E /* AddBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF3A1B9DB39D004C4F9E /* AddBankViewController.m */; };
 		0341DF4A1B9DB39D004C4F9E /* BankManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF3C1B9DB39D004C4F9E /* BankManagerController.m */; };
 		0341DF4B1B9DB39D004C4F9E /* CBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF3E1B9DB39D004C4F9E /* CBankViewController.m */; };
@@ -26,6 +26,9 @@
 		0341DF661B9DB3D5004C4F9E /* RecodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF5F1B9DB3D5004C4F9E /* RecodsCell.m */; };
 		0341DF7D1B9DB6A3004C4F9E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF7C1B9DB6A3004C4F9E /* LoginViewController.m */; };
 		0341DF7F1B9DB81F004C4F9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0341DF7E1B9DB81F004C4F9E /* Images.xcassets */; };
+		03A9ACAB1B9EACE100437FD4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACAA1B9EACE100437FD4 /* RegisterViewController.m */; };
+		03A9ACAE1B9EAE4D00437FD4 /* NewSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACAD1B9EAE4D00437FD4 /* NewSetViewController.m */; };
+		03A9ACB11B9EAE8F00437FD4 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACB01B9EAE8F00437FD4 /* ForgetViewController.m */; };
 		81D10F011B953F890053CA83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F001B953F890053CA83 /* main.m */; };
 		81D10F071B953F890053CA83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F061B953F890053CA83 /* ViewController.m */; };
 		81D10F0A1B953F890053CA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D10F081B953F890053CA83 /* Main.storyboard */; };
@@ -72,8 +75,8 @@
 /* Begin PBXFileReference section */
 		0341DF1B1B9D3258004C4F9E /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		0341DF1C1B9D3258004C4F9E /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
-		0341DF241B9D7E4B004C4F9E /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
-		0341DF251B9D7E4B004C4F9E /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		0341DF241B9D7E4B004C4F9E /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		0341DF251B9D7E4B004C4F9E /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
 		0341DF391B9DB39D004C4F9E /* AddBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBankViewController.h; sourceTree = "<group>"; };
 		0341DF3A1B9DB39D004C4F9E /* AddBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBankViewController.m; sourceTree = "<group>"; };
 		0341DF3B1B9DB39D004C4F9E /* BankManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankManagerController.h; sourceTree = "<group>"; };
@@ -107,6 +110,12 @@
 		0341DF7B1B9DB6A3004C4F9E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0341DF7C1B9DB6A3004C4F9E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0341DF7E1B9DB81F004C4F9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		03A9ACA91B9EACE100437FD4 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		03A9ACAA1B9EACE100437FD4 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		03A9ACAC1B9EAE4D00437FD4 /* NewSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSetViewController.h; sourceTree = "<group>"; };
+		03A9ACAD1B9EAE4D00437FD4 /* NewSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSetViewController.m; sourceTree = "<group>"; };
+		03A9ACAF1B9EAE8F00437FD4 /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
+		03A9ACB01B9EAE8F00437FD4 /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
 		81D10EFB1B953F890053CA83 /* zhicai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhicai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D10EFF1B953F890053CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81D10F001B953F890053CA83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -246,6 +255,12 @@
 			children = (
 				0341DF7B1B9DB6A3004C4F9E /* LoginViewController.h */,
 				0341DF7C1B9DB6A3004C4F9E /* LoginViewController.m */,
+				03A9ACAF1B9EAE8F00437FD4 /* ForgetViewController.h */,
+				03A9ACB01B9EAE8F00437FD4 /* ForgetViewController.m */,
+				03A9ACA91B9EACE100437FD4 /* RegisterViewController.h */,
+				03A9ACAA1B9EACE100437FD4 /* RegisterViewController.m */,
+				03A9ACAC1B9EAE4D00437FD4 /* NewSetViewController.h */,
+				03A9ACAD1B9EAE4D00437FD4 /* NewSetViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -376,8 +391,8 @@
 				81D10F8A1B9547BB0053CA83 /* BaseViewController.m */,
 				81D10F8B1B9547BB0053CA83 /* MyNavigationController.h */,
 				81D10F8C1B9547BB0053CA83 /* MyNavigationController.m */,
-				0341DF241B9D7E4B004C4F9E /* TabBarViewController.h */,
-				0341DF251B9D7E4B004C4F9E /* TabBarViewController.m */,
+				0341DF241B9D7E4B004C4F9E /* BaseTabBarViewController.h */,
+				0341DF251B9D7E4B004C4F9E /* BaseTabBarViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -561,6 +576,7 @@
 				0341DF631B9DB3D5004C4F9E /* MyassetTaCell.m in Sources */,
 				81D10F071B953F890053CA83 /* ViewController.m in Sources */,
 				0341DF661B9DB3D5004C4F9E /* RecodsCell.m in Sources */,
+				03A9ACAB1B9EACE100437FD4 /* RegisterViewController.m in Sources */,
 				81D10FAE1B9549F30053CA83 /* ATMTextLayer.m in Sources */,
 				81D10F8D1B9547BB0053CA83 /* BaseViewController.m in Sources */,
 				81D10FAA1B9549F30053CA83 /* ATMHudQueueItem.m in Sources */,
@@ -571,11 +587,12 @@
 				0341DF4C1B9DB39D004C4F9E /* InvestViewController.m in Sources */,
 				81D10FA91B9549F30053CA83 /* ATMHud.m in Sources */,
 				81D10FAC1B9549F30053CA83 /* ATMProgressLayer.m in Sources */,
+				03A9ACB11B9EAE8F00437FD4 /* ForgetViewController.m in Sources */,
 				81D10F7D1B95456C0053CA83 /* AFHTTPRequestOperationManager.m in Sources */,
 				0341DF621B9DB3D5004C4F9E /* formContrl.m in Sources */,
 				0341DF1D1B9D3258004C4F9E /* UIViewExt.m in Sources */,
 				0341DF601B9DB3D5004C4F9E /* BankTableViewCell.m in Sources */,
-				0341DF261B9D7E4B004C4F9E /* TabBarViewController.m in Sources */,
+				0341DF261B9D7E4B004C4F9E /* BaseTabBarViewController.m in Sources */,
 				81D10F811B95456C0053CA83 /* AFURLConnectionOperation.m in Sources */,
 				0341DF651B9DB3D5004C4F9E /* MyGiftcerCell.m in Sources */,
 				0341DF4B1B9DB39D004C4F9E /* CBankViewController.m in Sources */,
@@ -589,6 +606,7 @@
 				0341DF611B9DB3D5004C4F9E /* CBankTableViewCell.m in Sources */,
 				81D10FAD1B9549F30053CA83 /* ATMSoundFX.m in Sources */,
 				0341DF7D1B9DB6A3004C4F9E /* LoginViewController.m in Sources */,
+				03A9ACAE1B9EAE4D00437FD4 /* NewSetViewController.m in Sources */,
 				0341DF4E1B9DB39D004C4F9E /* MyGiftcerViewController.m in Sources */,
 				81D10F821B95456C0053CA83 /* AFURLRequestSerialization.m in Sources */,
 				81D10F7E1B95456C0053CA83 /* AFHTTPSessionManager.m in Sources */,

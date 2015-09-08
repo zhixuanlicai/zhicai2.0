@@ -14,7 +14,7 @@
 #import "formContrl.h"
 #import "RecodsViewController.h"
 #import "InvestViewController.h"
-
+#import "LoginViewController.h"
 @interface MyassetViewController ()<UITableViewDataSource,UITableViewDelegate,formContrlDelegate>
 
 @property (nonatomic, strong)  UIView *topView;
@@ -41,6 +41,8 @@
    
 //    self.navigationController.navigationBarHidden = YES;
     
+    self.parentViewController.navigationController.navigationItem.hidesBackButton = YES;
+    
     self.navigationItem.rightBarButtonItem = [CommonFunc customBarButtonItemTarget:self width:40 height:35 action:@selector(rightBarButtonTouchUpInside:) string:nil color:[UIColor blackColor] ImageName:nil];
     
     [self creatTopView];
@@ -50,7 +52,8 @@
 
 - (void)rightBarButtonTouchUpInside:(id)sender
 {
-
+    LoginViewController *loginVC = [[LoginViewController alloc]init];
+    [self.navigationController pushViewController:loginVC animated:YES];
 }
 
 #pragma mark 顶部视图
@@ -68,7 +71,7 @@
     UILabel *txtLabel = [CommonFunc createFontNameLabel:@"总资产(元)" FontName:@"Helvetica-Light" Size:15 TextColor:[UIColor whiteColor] Rect:CGRectMake((mScreenWidth - 100)/2, 35, 100, 26) Align:NSTextAlignmentCenter];
     [assetView addSubview:txtLabel];
     
-    UIButton *wholeBtn = [CommonFunc createButtonFrame:CGRectMake(txtLabel.right - 10, 35, 20, 20) Title:nil TitleColor:nil BgColor:[UIColor redColor] BgImageName:nil ImageName:nil SeleImage:nil Method:@selector(wholeTouchUpInside:) target:self];
+    UIButton *wholeBtn = [CommonFunc createButtonFrame:CGRectMake(txtLabel.right - 23, 23, 40, 40) Title:nil TitleColor:nil font:15 BgColor:[UIColor clearColor] BgImageName:nil ImageName:@"fsecdfc" SeleImage:nil Method:@selector(wholeTouchUpInside:) target:self];
     [assetView addSubview:wholeBtn];
     
     NSString *str = [CommonFunc  numFormatMoney:1000.12 numberStyle:NSNumberFormatterCurrencyStyle];

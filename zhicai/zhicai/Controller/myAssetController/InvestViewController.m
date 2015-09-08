@@ -20,6 +20,8 @@
     
     self.title = @"投资详情";
     
+    self.navigationItem.leftBarButtonItem = [CommonFunc backBarButtonItemTarget:self action:@selector(backBtnAction:)];
+    
     [self ceatSubViews];
     
 }

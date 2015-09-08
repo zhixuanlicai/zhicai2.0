@@ -126,7 +126,7 @@
     return textField;
 }
 
-+(UIButton*)createButtonFrame:(CGRect)frame Title:(NSString*)title TitleColor:(UIColor *)color BgColor:(UIColor *)bgColor BgImageName:(NSString*)bgImageName ImageName:(NSString*)imageName  SeleImage:(NSString *)sImage Method:(SEL)sel target:(id)target
++(UIButton*)createButtonFrame:(CGRect)frame Title:(NSString*)title TitleColor:(UIColor *)color font:(CGFloat)font BgColor:(UIColor *)bgColor BgImageName:(NSString*)bgImageName ImageName:(NSString*)imageName  SeleImage:(NSString *)sImage Method:(SEL)sel target:(id)target
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = frame;
@@ -134,6 +134,7 @@
     [button setTitleColor:color forState:UIControlStateNormal];
     [button setBackgroundColor:bgColor];
     [button setBackgroundImage:[UIImage imageNamed:bgImageName] forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:font];
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:sImage] forState:UIControlStateSelected];
     [button addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
@@ -165,6 +166,7 @@
     button.titleLabel.textColor = color;
     [button setTitleColor:color forState:UIControlStateNormal];
     [button setTitle:string forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:15];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
 //    [view addSubview:button];
     return [[UIBarButtonItem alloc] initWithCustomView:button];
@@ -226,8 +228,8 @@
 + (UIBarButtonItem *)backBarButtonItemTarget:(id)target action:(SEL)action
 {
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundImage:[UIImage imageNamed:@"share_5"] forState:UIControlStateNormal];
-    button.frame=CGRectMake(0, 0, 40, 35);
+    [button setBackgroundImage:[UIImage imageNamed:@"sdhsjhds"] forState:UIControlStateNormal];
+    button.frame=CGRectMake(0, 0, 30, 21);
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }

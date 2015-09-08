@@ -28,6 +28,7 @@
     
     self.title = @"银行卡管理";
     
+    self.navigationItem.leftBarButtonItem = [CommonFunc backBarButtonItemTarget:self action:@selector(backBtnAction:)];
     
     self.delStr = @"1";
     
@@ -84,10 +85,10 @@
     self.bottomView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.bottomView];
     
-    UIButton *delBtn = [CommonFunc createButtonFrame:CGRectMake(0, 0, self.bottomView.width, 44) Title:@"删除银行卡" TitleColor:[UIColor colorWithHexString:@"ffffff"] BgColor:[UIColor blueColor]BgImageName:nil ImageName:nil  SeleImage:nil Method:@selector(deleBankCardAction:) target:self];
+    UIButton *delBtn = [CommonFunc createButtonFrame:CGRectMake(0, 0, self.bottomView.width, 44) Title:@"删除银行卡" TitleColor:[UIColor colorWithHexString:@"ffffff"] font:20 BgColor:[UIColor colorWithHexString:@"0064DD"]BgImageName:nil ImageName:nil  SeleImage:nil Method:@selector(deleBankCardAction:) target:self];
     [self.bottomView addSubview:delBtn];
     
-    UIButton *canBtn = [CommonFunc createButtonFrame:CGRectMake(0, delBtn.bottom + 5, delBtn.width, delBtn.height) Title:@"取消" TitleColor:[UIColor colorWithHexString:@"ffffff"] BgColor:[UIColor blueColor] BgImageName:nil ImageName:nil SeleImage:nil Method:@selector(deleBankCardAction:) target:self];
+    UIButton *canBtn = [CommonFunc createButtonFrame:CGRectMake(0, delBtn.bottom + 5, delBtn.width, delBtn.height) Title:@"取消" TitleColor:[UIColor colorWithHexString:@"ffffff"] font:20 BgColor:[UIColor colorWithHexString:@"0064DD"] BgImageName:nil ImageName:nil SeleImage:nil Method:@selector(deleBankCardAction:) target:self];
     [self.bottomView addSubview:canBtn];
     
 }
@@ -95,7 +96,7 @@
 //导航栏右侧按钮
 -(void)rightBarButtonItem
 {
-    self.navigationItem.rightBarButtonItem = [CommonFunc customBarButtonItemTarget:self width:40 height:35 action:@selector(rightBarButtonTouchUpInside:) string:nil color:[UIColor blackColor] ImageName:nil];
+    self.navigationItem.rightBarButtonItem = [CommonFunc customBarButtonItemTarget:self width:30 height:21 action:@selector(rightBarButtonTouchUpInside:) string:nil color:[UIColor clearColor] ImageName:@"sdhsjfsdcs"];
 }
 
 #pragma mark 点击事件
@@ -108,6 +109,7 @@
         [self.mainTableView reloadData];
         
         [self getView:self.bottomView Top:(mScreenHeight - self.bottomView.height - mStatusBarOffset) left:self.bottomView.left time:.3];
+        [self.mainTableView setEditing:YES animated:YES];
     }
   else
   {
@@ -130,6 +132,7 @@
              self.mainTableView.tableFooterView.hidden = NO;
             [self getView:self.bottomView Top:mScreenHeight left:self.bottomView.left time:.3];
             self.delStr = @"1";
+            [self.mainTableView setEditing:NO animated:YES];
             NSLog(@"取消");
         }
             break;
@@ -173,18 +176,40 @@
     cell.delegate = self;
     if ([self.delStr isEqualToString:@"2"])
     {
-        [self getView:cell.bottomView Top:cell.bottomView.top left:45 time:.3];
-        [self getView:cell.delBtn Top:cell.delBtn.top left:11 time:.3];
+        [self getView:cell.bottomView Top:cell.bottomView.top left:45 time:.05];
     }
     else
     {
-        [self getView:cell.bottomView Top:cell.bottomView.top left:20 time:.3];
-        [self getView:cell.delBtn Top:cell.delBtn.top left:-30 time:.3];
+        [self getView:cell.bottomView Top:cell.bottomView.top left:20 time:.05];
     }
     
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    if (rightButton.title== @"确定") {
+//        [deleteDic setObject:indexPath forKey:[dataArray objectAtIndex:indexPath.row]];
+//        
+//    }
+//    else {
+//        
+//    }
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    if (rightButton.title == @"确定")
+//    {
+//        [deleteDic removeObjectForKey:[dataArray objectAtIndex:indexPath.row]];
+//    }
+    
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert;
+}
 - (void)deleBankCard:(NSString *)model
 {
     NSLog(@"时间按国际城");

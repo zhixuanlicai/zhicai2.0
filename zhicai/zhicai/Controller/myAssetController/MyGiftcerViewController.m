@@ -23,6 +23,8 @@
     
     self.title = @"我的优惠券";
     
+    self.navigationItem.leftBarButtonItem = [CommonFunc backBarButtonItemTarget:self action:@selector(backBtnAction:)];
+    
     [self creatTableView];
 }
 
