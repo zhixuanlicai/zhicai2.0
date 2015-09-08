@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
     self.title = @"登录";
+    [self.view setBackgroundColor:[UIColor colorWithHexString:@"F0EFF5"]];
 }
 
 - (void)didReceiveMemoryWarning
