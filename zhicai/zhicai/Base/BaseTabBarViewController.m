@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 zhicai. All rights reserved.
 //
 
-#import "TabBarViewController.h"
+#import "BaseTabBarViewController.h"
 
-@interface TabBarViewController ()
+@interface BaseTabBarViewController ()
 
 @end
 
-@implementation TabBarViewController
+@implementation BaseTabBarViewController
 
 - (void)viewDidLoad
 {
