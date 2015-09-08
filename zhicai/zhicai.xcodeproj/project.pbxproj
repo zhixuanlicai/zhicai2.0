@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0341DF1D1B9D3258004C4F9E /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF1C1B9D3258004C4F9E /* UIViewExt.m */; };
-		0341DF261B9D7E4B004C4F9E /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF251B9D7E4B004C4F9E /* BaseTabBarViewController.m */; };
+		0341DF261B9D7E4B004C4F9E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF251B9D7E4B004C4F9E /* TabBarViewController.m */; };
 		0341DF491B9DB39D004C4F9E /* AddBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF3A1B9DB39D004C4F9E /* AddBankViewController.m */; };
 		0341DF4A1B9DB39D004C4F9E /* BankManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF3C1B9DB39D004C4F9E /* BankManagerController.m */; };
 		0341DF4B1B9DB39D004C4F9E /* CBankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF3E1B9DB39D004C4F9E /* CBankViewController.m */; };
@@ -72,8 +72,8 @@
 /* Begin PBXFileReference section */
 		0341DF1B1B9D3258004C4F9E /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		0341DF1C1B9D3258004C4F9E /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
-		0341DF241B9D7E4B004C4F9E /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
-		0341DF251B9D7E4B004C4F9E /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		0341DF241B9D7E4B004C4F9E /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		0341DF251B9D7E4B004C4F9E /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		0341DF391B9DB39D004C4F9E /* AddBankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBankViewController.h; sourceTree = "<group>"; };
 		0341DF3A1B9DB39D004C4F9E /* AddBankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBankViewController.m; sourceTree = "<group>"; };
 		0341DF3B1B9DB39D004C4F9E /* BankManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankManagerController.h; sourceTree = "<group>"; };
@@ -376,8 +376,8 @@
 				81D10F8A1B9547BB0053CA83 /* BaseViewController.m */,
 				81D10F8B1B9547BB0053CA83 /* MyNavigationController.h */,
 				81D10F8C1B9547BB0053CA83 /* MyNavigationController.m */,
-				0341DF241B9D7E4B004C4F9E /* BaseTabBarViewController.h */,
-				0341DF251B9D7E4B004C4F9E /* BaseTabBarViewController.m */,
+				0341DF241B9D7E4B004C4F9E /* TabBarViewController.h */,
+				0341DF251B9D7E4B004C4F9E /* TabBarViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -575,7 +575,7 @@
 				0341DF621B9DB3D5004C4F9E /* formContrl.m in Sources */,
 				0341DF1D1B9D3258004C4F9E /* UIViewExt.m in Sources */,
 				0341DF601B9DB3D5004C4F9E /* BankTableViewCell.m in Sources */,
-				0341DF261B9D7E4B004C4F9E /* BaseTabBarViewController.m in Sources */,
+				0341DF261B9D7E4B004C4F9E /* TabBarViewController.m in Sources */,
 				81D10F811B95456C0053CA83 /* AFURLConnectionOperation.m in Sources */,
 				0341DF651B9DB3D5004C4F9E /* MyGiftcerCell.m in Sources */,
 				0341DF4B1B9DB39D004C4F9E /* CBankViewController.m in Sources */,
