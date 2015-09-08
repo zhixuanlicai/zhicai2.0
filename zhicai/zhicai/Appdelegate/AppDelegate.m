@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "MyassetViewController.h"
 #import "MyNavigationController.h"
-
+#import "HomeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,9 +21,12 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    MyassetViewController *assetVC = [[MyassetViewController alloc]init];
-    MyNavigationController *assetNav = [[MyNavigationController alloc]initWithRootViewController:assetVC];
-    self.window.rootViewController = assetNav;
+//    MyassetViewController *assetVC = [[MyassetViewController alloc]init];
+//    MyNavigationController *assetNav = [[MyNavigationController alloc]initWithRootViewController:assetVC];
+//    self.window.rootViewController = assetNav;
+    HomeViewController *home = [[HomeViewController alloc] init];
+    MyNavigationController *nc = [[MyNavigationController alloc] initWithRootViewController:home];
+    self.window.rootViewController = nc;
     
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
