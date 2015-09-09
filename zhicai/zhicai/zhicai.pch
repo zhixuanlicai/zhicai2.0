@@ -26,5 +26,6 @@
 #import "UIViewExt.h"
 #import "AppDelegate.h"
 #import "SaveCachesFile.h"
+#import "RTLabel.h"
 
 #endif

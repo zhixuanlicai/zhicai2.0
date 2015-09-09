@@ -65,13 +65,22 @@
 }
 
 
-+(UILabel*)createFontNameLabel:(NSString*)text FontName:(NSString *)name Size:(int)size TextColor:(UIColor*)textColor Rect:(CGRect)rect Align:(NSTextAlignment)align
++(UILabel*)createFontNameLabel:(NSString*)text FontName:(NSString *)name Size:(int)size TextColor:(UIColor*)textColor Rect:(CGRect)rect Align:(NSTextAlignment)align ifBool:(BOOL)ifBool
 {
     UILabel* label = [[UILabel alloc] initWithFrame:rect];
     label.backgroundColor = [UIColor clearColor];
     label.textColor = textColor;
     //    label.font = [UIFont systemFontOfSize:size];
     label.font = [UIFont fontWithName:name size:size];
+    if (ifBool)
+    {
+        //高度固定不折行，根据字的多少计算label的宽度
+        CGSize sizef = [text sizeWithFont:label.font constrainedToSize:CGSizeMake(MAXFLOAT, label.frame.size.height)];
+        NSLog(@"size.width=%f, size.height=%f", sizef.width, sizef.height);
+        //根据计算结果重新设置UILabel的尺寸
+        label.width = sizef.width;
+    }
+  
     label.textAlignment = align;
     label.text = text;
     return label;

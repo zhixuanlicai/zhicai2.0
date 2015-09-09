@@ -131,7 +131,7 @@
 {
     NSValue * aValue = [[notif userInfo]objectForKey:UIKeyboardFrameEndUserInfoKey];
     CGRect keyBoardSize;
-    [aValue getValue:&keyBoardSize];
+    [aValue getValue:&keyBoardSize]; 
     [UIView animateWithDuration:.2 animations:^{
         loginBtn.frame = CGRectMake(0, mScreenHeight-keyBoardSize.size.height-49- mStatusBarOffset, mScreenWidth, 49);
 //        loginBtn.backgroundColor = [UIColor colorWithHexString:@"31424A"];

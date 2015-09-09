@@ -8,6 +8,8 @@
 
 #import "formContrl.h"
 
+//#define MAXNUM(a,b,c) (a>b?(a>c?a:c):(b>c?b:c))
+
 @implementation formContrl
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -18,6 +20,17 @@
         self.backgroundColor = [UIColor whiteColor];
         self.frame = frame;
         [self creatViews];
+        
+//        NSInteger A = 12;
+//        NSInteger B = 23;
+//        NSInteger C = 24;
+//        
+//        NSLog(@"max %@",@(MAXNUM(12, 23,24)));
+//        if (C == MAXNUM(12, 23, 24))
+//        {
+//            NSLog(@"B C %@ %@",@(A),@(B));
+//        }
+//       
     }
     return self;
 }

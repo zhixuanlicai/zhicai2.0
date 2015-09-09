@@ -64,21 +64,21 @@
     [self.view addSubview:self.topView];
     
     //总资产
-    UIView *assetView = [[UIView alloc]initWithFrame:CGRectMake(0, 0,self.topView.frame.size.width , (self.topView.frame.size.height)*2/3 )];
+    UIView *assetView = [[UIView alloc]initWithFrame:CGRectMake(0, 0,self.topView.width , (self.topView.height)*2/3 )];
     assetView.backgroundColor = [UIColor clearColor];
     [self.topView addSubview:assetView];
     
-    UILabel *txtLabel = [CommonFunc createFontNameLabel:@"总资产(元)" FontName:@"Helvetica-Light" Size:15 TextColor:[UIColor whiteColor] Rect:CGRectMake((mScreenWidth - 100)/2, 35, 100, 26) Align:NSTextAlignmentCenter];
+    UILabel *txtLabel = [CommonFunc createFontNameLabel:@"总资产(元)" FontName:@"Helvetica-Light" Size:15 TextColor:[UIColor whiteColor] Rect:CGRectMake((mScreenWidth - 100)/2,  assetView.height *1/3 -15, 100, 26) Align:NSTextAlignmentCenter ifBool:NO];
     [assetView addSubview:txtLabel];
     
-    UIButton *wholeBtn = [CommonFunc createButtonFrame:CGRectMake(txtLabel.right - 23, 23, 40, 40) Title:nil TitleColor:nil font:15 BgColor:[UIColor clearColor] BgImageName:nil ImageName:@"fsecdfc" SeleImage:nil Method:@selector(wholeTouchUpInside:) target:self];
+    UIButton *wholeBtn = [CommonFunc createButtonFrame:CGRectMake(txtLabel.right - 23, assetView.height *1/3 -25, 40, 40) Title:nil TitleColor:nil font:15 BgColor:[UIColor clearColor] BgImageName:nil ImageName:@"fsecdfc" SeleImage:nil Method:@selector(wholeTouchUpInside:) target:self];
     [assetView addSubview:wholeBtn];
     
     NSString *str = [CommonFunc  numFormatMoney:1000.12 numberStyle:NSNumberFormatterCurrencyStyle];
-    UILabel *mLabel = [CommonFunc createFontNameLabel:str FontName:@"Helvetica" Size:45 TextColor:[UIColor whiteColor] Rect:CGRectMake(10,67, mScreenWidth - 20, 46) Align:NSTextAlignmentCenter];
+    UILabel *mLabel = [CommonFunc createFontNameLabel:str FontName:@"Helvetica" Size:45 TextColor:[UIColor whiteColor] Rect:CGRectMake(10,txtLabel.bottom + 5, mScreenWidth - 20, 46) Align:NSTextAlignmentCenter ifBool:NO];
     [assetView addSubview:mLabel];
   
-    UIImageView *lineImg = [CommonFunc  creatImgeViewRect:CGRectMake(0, assetView.frame.size.height - 1, mScreenWidth, 1) Color:[UIColor colorWithHexString:@"74AAFC"] Img:nil alpha:1];
+    UIImageView *lineImg = [CommonFunc  creatImgeViewRect:CGRectMake(0, assetView.height - 1, mScreenWidth, 1) Color:[UIColor colorWithHexString:@"74AAFC"] Img:nil alpha:1];
     [assetView addSubview:lineImg];
     
     //总收益和昨日收益
@@ -86,16 +86,16 @@
     bView.backgroundColor = [UIColor clearColor];
     [self.topView addSubview:bView];
     
-    UILabel *inLab = [CommonFunc createFontNameLabel:@"总收益(元)" FontName:@"Helvetica-Light" Size:12 TextColor:[UIColor whiteColor] Rect:CGRectMake(10, 15, mScreenWidth/2 - 20, 15) Align:NSTextAlignmentCenter];
+    UILabel *inLab = [CommonFunc createFontNameLabel:@"总收益(元)" FontName:@"Helvetica-Light" Size:12 TextColor:[UIColor whiteColor] Rect:CGRectMake(10, (bView.height - 39) / 2, mScreenWidth/2 - 20, 15) Align:NSTextAlignmentCenter ifBool:NO];
     [bView addSubview:inLab];
     
-    UILabel *inMoney = [CommonFunc createFontNameLabel:[CommonFunc  numFormatMoney:230 numberStyle:NSNumberFormatterCurrencyStyle] FontName:@"Helvetica-Light" Size:23 TextColor:[UIColor whiteColor] Rect:CGRectMake(10, 35, mScreenWidth/2 - 20, 24) Align:NSTextAlignmentCenter];
+    UILabel *inMoney = [CommonFunc createFontNameLabel:[CommonFunc  numFormatMoney:230 numberStyle:NSNumberFormatterCurrencyStyle] FontName:@"Helvetica-Light" Size:23 TextColor:[UIColor whiteColor] Rect:CGRectMake(10, inLab.bottom + 3, mScreenWidth/2 - 20, 24) Align:NSTextAlignmentCenter ifBool:NO];
     [bView addSubview:inMoney];
     
-    UILabel *yLab = [CommonFunc createFontNameLabel:@"昨日收益(元)" FontName:@"Helvetica-Light" Size:12 TextColor:[UIColor whiteColor] Rect:CGRectMake(mScreenWidth/2 + 10 , 15, mScreenWidth/2 - 20, 15) Align:NSTextAlignmentCenter];
+    UILabel *yLab = [CommonFunc createFontNameLabel:@"昨日收益(元)" FontName:@"Helvetica-Light" Size:12 TextColor:[UIColor whiteColor] Rect:CGRectMake(mScreenWidth/2 + 10 , inLab.top, mScreenWidth/2 - 20, 15) Align:NSTextAlignmentCenter ifBool:NO];
     [bView addSubview:yLab];
     
-    UILabel *yMoney = [CommonFunc createFontNameLabel:[CommonFunc  numFormatMoney:2.5 numberStyle:NSNumberFormatterCurrencyStyle] FontName:@"Helvetica-Light" Size:23 TextColor:[UIColor whiteColor] Rect:CGRectMake(mScreenWidth/2 + 10,35, mScreenWidth/2 - 20, 24) Align:NSTextAlignmentCenter];
+    UILabel *yMoney = [CommonFunc createFontNameLabel:[CommonFunc  numFormatMoney:2.5 numberStyle:NSNumberFormatterCurrencyStyle] FontName:@"Helvetica-Light" Size:23 TextColor:[UIColor whiteColor] Rect:CGRectMake(mScreenWidth/2 + 10,inLab.bottom + 3, mScreenWidth/2 - 20, 24) Align:NSTextAlignmentCenter ifBool:NO];
     [bView addSubview:yMoney];
 
 }

@@ -7,6 +7,7 @@
 //
 
 #import "InvestViewController.h"
+#import "ListDetailsController.h"
 
 @interface InvestViewController ()
 
@@ -103,6 +104,9 @@
 
 - (void)detailTouchUpInside:(UITapGestureRecognizer *)gesture
 {
+    
+    ListDetailsController *detVC = [[ListDetailsController alloc]init];
+    [self.navigationController pushViewController:detVC animated:YES];
     NSLog(@"标的详情");
 }
 

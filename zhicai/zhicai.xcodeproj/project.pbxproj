@@ -26,10 +26,16 @@
 		0341DF661B9DB3D5004C4F9E /* RecodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF5F1B9DB3D5004C4F9E /* RecodsCell.m */; };
 		0341DF7D1B9DB6A3004C4F9E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0341DF7C1B9DB6A3004C4F9E /* LoginViewController.m */; };
 		0341DF7F1B9DB81F004C4F9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0341DF7E1B9DB81F004C4F9E /* Images.xcassets */; };
+		039CD0601B9FD06E00D57C4C /* ListDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CD05F1B9FD06E00D57C4C /* ListDetailsController.m */; };
+		039CD0631BA019E900D57C4C /* CDetalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CD0621BA019E900D57C4C /* CDetalsViewController.m */; };
+		039CD0661BA0346000D57C4C /* StateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CD0651BA0346000D57C4C /* StateViewController.m */; };
+		039CD0691BA0474400D57C4C /* SafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CD0681BA0474400D57C4C /* SafeViewController.m */; };
+		039CD06C1BA04B9C00D57C4C /* ProIntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CD06B1BA04B9C00D57C4C /* ProIntroViewController.m */; };
+		039CD0701BA04D4D00D57C4C /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CD06F1BA04D4D00D57C4C /* RTLabel.m */; };
+		039CD0741BA04E5E00D57C4C /* SaveCachesFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CD0731BA04E5E00D57C4C /* SaveCachesFile.m */; };
 		03A9ACAB1B9EACE100437FD4 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACAA1B9EACE100437FD4 /* RegisterViewController.m */; };
 		03A9ACAE1B9EAE4D00437FD4 /* NewSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACAD1B9EAE4D00437FD4 /* NewSetViewController.m */; };
 		03A9ACB11B9EAE8F00437FD4 /* ForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACB01B9EAE8F00437FD4 /* ForgetViewController.m */; };
-		03A9ACB61B9ECC7B00437FD4 /* SaveCachesFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A9ACB51B9ECC7B00437FD4 /* SaveCachesFile.m */; };
 		81D10F011B953F890053CA83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F001B953F890053CA83 /* main.m */; };
 		81D10F071B953F890053CA83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D10F061B953F890053CA83 /* ViewController.m */; };
 		81D10F0A1B953F890053CA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D10F081B953F890053CA83 /* Main.storyboard */; };
@@ -111,14 +117,26 @@
 		0341DF7B1B9DB6A3004C4F9E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0341DF7C1B9DB6A3004C4F9E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0341DF7E1B9DB81F004C4F9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		039CD05E1B9FD06E00D57C4C /* ListDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailsController.h; sourceTree = "<group>"; };
+		039CD05F1B9FD06E00D57C4C /* ListDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailsController.m; sourceTree = "<group>"; };
+		039CD0611BA019E900D57C4C /* CDetalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDetalsViewController.h; sourceTree = "<group>"; };
+		039CD0621BA019E900D57C4C /* CDetalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDetalsViewController.m; sourceTree = "<group>"; };
+		039CD0641BA0346000D57C4C /* StateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateViewController.h; sourceTree = "<group>"; };
+		039CD0651BA0346000D57C4C /* StateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateViewController.m; sourceTree = "<group>"; };
+		039CD0671BA0474400D57C4C /* SafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeViewController.h; sourceTree = "<group>"; };
+		039CD0681BA0474400D57C4C /* SafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeViewController.m; sourceTree = "<group>"; };
+		039CD06A1BA04B9C00D57C4C /* ProIntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProIntroViewController.h; sourceTree = "<group>"; };
+		039CD06B1BA04B9C00D57C4C /* ProIntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProIntroViewController.m; sourceTree = "<group>"; };
+		039CD06E1BA04D4D00D57C4C /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
+		039CD06F1BA04D4D00D57C4C /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
+		039CD0721BA04E5E00D57C4C /* SaveCachesFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveCachesFile.h; sourceTree = "<group>"; };
+		039CD0731BA04E5E00D57C4C /* SaveCachesFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveCachesFile.m; sourceTree = "<group>"; };
 		03A9ACA91B9EACE100437FD4 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		03A9ACAA1B9EACE100437FD4 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		03A9ACAC1B9EAE4D00437FD4 /* NewSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSetViewController.h; sourceTree = "<group>"; };
 		03A9ACAD1B9EAE4D00437FD4 /* NewSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSetViewController.m; sourceTree = "<group>"; };
 		03A9ACAF1B9EAE8F00437FD4 /* ForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetViewController.h; sourceTree = "<group>"; };
 		03A9ACB01B9EAE8F00437FD4 /* ForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetViewController.m; sourceTree = "<group>"; };
-		03A9ACB41B9ECC7B00437FD4 /* SaveCachesFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveCachesFile.h; sourceTree = "<group>"; };
-		03A9ACB51B9ECC7B00437FD4 /* SaveCachesFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveCachesFile.m; sourceTree = "<group>"; };
 		81D10EFB1B953F890053CA83 /* zhicai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhicai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D10EFF1B953F890053CA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81D10F001B953F890053CA83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -268,13 +286,39 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		03A9ACB31B9ECC3700437FD4 /* SaveCaches */ = {
+		039CD05D1B9FD04100D57C4C /* listDetails */ = {
 			isa = PBXGroup;
 			children = (
-				03A9ACB41B9ECC7B00437FD4 /* SaveCachesFile.h */,
-				03A9ACB51B9ECC7B00437FD4 /* SaveCachesFile.m */,
+				039CD05E1B9FD06E00D57C4C /* ListDetailsController.h */,
+				039CD05F1B9FD06E00D57C4C /* ListDetailsController.m */,
+				039CD0611BA019E900D57C4C /* CDetalsViewController.h */,
+				039CD0621BA019E900D57C4C /* CDetalsViewController.m */,
+				039CD0641BA0346000D57C4C /* StateViewController.h */,
+				039CD0651BA0346000D57C4C /* StateViewController.m */,
+				039CD0671BA0474400D57C4C /* SafeViewController.h */,
+				039CD0681BA0474400D57C4C /* SafeViewController.m */,
+				039CD06A1BA04B9C00D57C4C /* ProIntroViewController.h */,
+				039CD06B1BA04B9C00D57C4C /* ProIntroViewController.m */,
 			);
-			name = SaveCaches;
+			path = listDetails;
+			sourceTree = "<group>";
+		};
+		039CD06D1BA04D2400D57C4C /* RTLabel */ = {
+			isa = PBXGroup;
+			children = (
+				039CD06E1BA04D4D00D57C4C /* RTLabel.h */,
+				039CD06F1BA04D4D00D57C4C /* RTLabel.m */,
+			);
+			path = RTLabel;
+			sourceTree = "<group>";
+		};
+		039CD0711BA04E5E00D57C4C /* SaveCaches */ = {
+			isa = PBXGroup;
+			children = (
+				039CD0721BA04E5E00D57C4C /* SaveCachesFile.h */,
+				039CD0731BA04E5E00D57C4C /* SaveCachesFile.m */,
+			);
+			path = SaveCaches;
 			sourceTree = "<group>";
 		};
 		81D10EF21B953F890053CA83 = {
@@ -362,7 +406,7 @@
 		81D10F291B9540FE0053CA83 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				03A9ACB31B9ECC3700437FD4 /* SaveCaches */,
+				039CD0711BA04E5E00D57C4C /* SaveCaches */,
 				0341DF511B9DB3D5004C4F9E /* myAssetView */,
 			);
 			path = View;
@@ -371,6 +415,7 @@
 		81D10F2A1B9541090053CA83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				039CD05D1B9FD04100D57C4C /* listDetails */,
 				0341DF7A1B9DB5BC004C4F9E /* Login */,
 				0341DF381B9DB39D004C4F9E /* myAssetController */,
 			);
@@ -380,6 +425,7 @@
 		81D10F2B1B95418C0053CA83 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				039CD06D1BA04D2400D57C4C /* RTLabel */,
 				0341DF1A1B9D3258004C4F9E /* UIViewExt */,
 				81D10F941B9549F30053CA83 /* ATMHud */,
 				81D10F8F1B9548070053CA83 /* Colorexpend */,
@@ -585,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0341DF4A1B9DB39D004C4F9E /* BankManagerController.m in Sources */,
+				039CD0741BA04E5E00D57C4C /* SaveCachesFile.m in Sources */,
 				0341DF641B9DB3D5004C4F9E /* MyassetTopView.m in Sources */,
 				0341DF631B9DB3D5004C4F9E /* MyassetTaCell.m in Sources */,
 				81D10F071B953F890053CA83 /* ViewController.m in Sources */,
@@ -604,6 +651,7 @@
 				81D10F7D1B95456C0053CA83 /* AFHTTPRequestOperationManager.m in Sources */,
 				0341DF621B9DB3D5004C4F9E /* formContrl.m in Sources */,
 				0341DF1D1B9D3258004C4F9E /* UIViewExt.m in Sources */,
+				039CD0661BA0346000D57C4C /* StateViewController.m in Sources */,
 				0341DF601B9DB3D5004C4F9E /* BankTableViewCell.m in Sources */,
 				0341DF261B9D7E4B004C4F9E /* BaseTabBarViewController.m in Sources */,
 				81D10F811B95456C0053CA83 /* AFURLConnectionOperation.m in Sources */,
@@ -615,19 +663,23 @@
 				81D10FBB1B9571EF0053CA83 /* CommonFunc.m in Sources */,
 				81D10F7C1B95456C0053CA83 /* AFHTTPRequestOperation.m in Sources */,
 				81D10F271B9540090053CA83 /* AppDelegate.m in Sources */,
-				03A9ACB61B9ECC7B00437FD4 /* SaveCachesFile.m in Sources */,
 				81D10F921B9548070053CA83 /* UIColor+expanded.m in Sources */,
+				039CD0701BA04D4D00D57C4C /* RTLabel.m in Sources */,
+				039CD0631BA019E900D57C4C /* CDetalsViewController.m in Sources */,
+				039CD0601B9FD06E00D57C4C /* ListDetailsController.m in Sources */,
 				0341DF611B9DB3D5004C4F9E /* CBankTableViewCell.m in Sources */,
 				81D10FAD1B9549F30053CA83 /* ATMSoundFX.m in Sources */,
 				0341DF7D1B9DB6A3004C4F9E /* LoginViewController.m in Sources */,
 				03A9ACAE1B9EAE4D00437FD4 /* NewSetViewController.m in Sources */,
 				0341DF4E1B9DB39D004C4F9E /* MyGiftcerViewController.m in Sources */,
+				039CD06C1BA04B9C00D57C4C /* ProIntroViewController.m in Sources */,
 				81D10F821B95456C0053CA83 /* AFURLRequestSerialization.m in Sources */,
 				81D10F7E1B95456C0053CA83 /* AFHTTPSessionManager.m in Sources */,
 				81D10F7F1B95456C0053CA83 /* AFNetworkReachabilityManager.m in Sources */,
 				81D10F831B95456C0053CA83 /* AFURLResponseSerialization.m in Sources */,
 				81D10F8E1B9547BB0053CA83 /* MyNavigationController.m in Sources */,
 				81D10F841B95456C0053CA83 /* AFURLSessionManager.m in Sources */,
+				039CD0691BA0474400D57C4C /* SafeViewController.m in Sources */,
 				0341DF501B9DB39D004C4F9E /* ReDetailsViewController.m in Sources */,
 				81D10F311B95451E0053CA83 /* Httptool.m in Sources */,
 			);

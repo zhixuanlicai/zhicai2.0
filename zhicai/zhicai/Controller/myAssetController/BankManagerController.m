@@ -32,11 +32,40 @@
     
     self.delStr = @"1";
     
-    [self rightBarButtonItem];
+//    [self rightBarButtonItem];
+//    
+//    [self creatTableView];
+//    
+//    [self creatDeleView];
     
-    [self creatTableView];
+    [self creatNoneView];
+}
+
+//无银行卡显示页面
+- (void)creatNoneView
+{
+    UIView *topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, mScreenWidth, 224)];
+    [self.view addSubview:topView];
     
-    [self creatDeleView];
+ 
+}
+
+- (UIView *)smallView:(CGRect)rect corWidth:(CGFloat)corWid borWidth:(CGFloat)borWid yesOrNo:(BOOL)yesOrNo
+{
+    UIView *view = [[UIView alloc]initWithFrame:rect];
+    view.backgroundColor = [UIColor whiteColor];
+    view.layer.masksToBounds = YES;
+    view.layer.cornerRadius = corWid;
+    view.layer.borderWidth = borWid;
+    view.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    UILabel *label  = [CommonFunc createLabel:@"亲！ 您还未绑定银行卡哟" FontSize:15 TextColor:[UIColor colorWithHexString:@"4C595D"] Rect:CGRectMake(0, (view.height - 20)/2, view.width, 20) Align:NSTextAlignmentCenter];
+    if (yesOrNo)
+    {
+        [view addSubview:label];
+    }
+    
+    return  view;
 }
 
 - (void)creatTableView
@@ -52,18 +81,23 @@
     hView.backgroundColor = [UIColor clearColor];
     self.mainTableView.tableHeaderView = hView;
     
-    self.mainTableView.tableFooterView = [self footView];
+    self.mainTableView.tableFooterView = [self footView:CGRectMake(0, 0, mScreenWidth, 175)];
     
 }
 
-- (UIView *)footView
+- (UIView *)footView:(CGRect)rect
 {
-    UIView *footView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, mScreenWidth, 175)];
+    UIView *footView = [[UIView alloc]initWithFrame:rect];
     footView.backgroundColor = [UIColor clearColor];
+
     
     UIView *addView = [[UIView alloc]initWithFrame:CGRectMake(20, 10, footView.width - 40, 165)];
     addView.backgroundColor = [UIColor whiteColor];
     [footView addSubview:addView];
+    
+    addView.layer.cornerRadius = 6.0;
+    addView.layer.borderWidth = .2;
+    addView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     
     UIImageView *addIMG = [CommonFunc creatImgeViewRect:CGRectMake((addView.width - 28)/2, 50, 28, 28) Color:[UIColor clearColor] Img:@"dsfccxvb" alpha:1];
     [addView addSubview:addIMG];
@@ -106,10 +140,11 @@
     {
         self.mainTableView.tableFooterView.hidden = YES;
         self.delStr = @"2";
-        [self.mainTableView reloadData];
         
         [self getView:self.bottomView Top:(mScreenHeight - self.bottomView.height - mStatusBarOffset) left:self.bottomView.left time:.3];
         [self.mainTableView setEditing:YES animated:YES];
+        [self.mainTableView reloadData];
+
     }
   else
   {
@@ -171,8 +206,7 @@
     if (!cell)
     {
         cell = [[BankTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:bCell];
-        cell.backgroundColor = [UIColor clearColor];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = [UIColor clearColor]; 
     }
     cell.delegate = self;
     if ([self.delStr isEqualToString:@"2"])
@@ -211,6 +245,55 @@
 {
     return UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert;
 }
+
+/*
+ // 选中操作
+ - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+ // 取消前一个选中的，就是单选啦
+ NSIndexPath *lastIndex = [NSIndexPath indexPathForRow:_index inSection:0];
+ UITableViewCell *lastCell = [tableView cellForRowAtIndexPath:lastIndex];
+ lastCell.accessoryType = UITableViewCellAccessoryNone;
+ 
+ // 选中操作
+ UITableViewCell *cell = [tableView  cellForRowAtIndexPath:indexPath];
+ cell.accessoryType = UITableViewCellAccessoryCheckmark;
+ 
+ // 保存选中的
+ _index = indexPath.row;
+ [_tableView performSelector:@selector(deselectRowAtIndexPath:animated:) withObject:indexPath afterDelay:.5];
+ 
+ }
+ 
+ // 设置行数据
+ 
+ - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+ static NSString *cellIdentifier = @"cell";
+ 
+ UITableViewCell  *cell  = [tableView dequeueReusableCellWithIdentifier: cellIdentifier];
+ 
+ if (cell == nil) {
+ cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
+ }
+ 
+ NSString *fontName = _listArray[indexPath.row];
+ cell.textLabel.text = fontName;
+ cell.textLabel.textColor = [UIColor blueColor];
+ cell.textLabel.font = [UIFont fontWithName:fontName size:18];
+ 
+ NSLog(@"%d", indexPath.row);
+ 
+ // 重用机制，如果选中的行正好要重用
+ if (_index == indexPath.row) {
+ cell.accessoryType = UITableViewCellAccessoryCheckmark;
+ } else {
+ cell.accessoryType = UITableViewCellAccessoryNone;
+ }
+ 
+ return cell;
+ }
+ */
+
 - (void)deleBankCard:(NSString *)model
 {
     NSLog(@"时间按国际城");

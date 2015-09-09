@@ -14,7 +14,7 @@
 + (NSString*) dateToString:(NSDate*)date;
 + (NSString *)md5HexDigest:(NSString*)input ;
 +(UILabel*) createLabel:(NSString*)text FontSize:(int)size TextColor:(UIColor*)textColor Rect:(CGRect)rect Align:(NSTextAlignment)align;
-+(UILabel*)createFontNameLabel:(NSString*)text FontName:(NSString *)name Size:(int)size TextColor:(UIColor*)textColor Rect:(CGRect)rect Align:(NSTextAlignment)align;
++(UILabel*)createFontNameLabel:(NSString*)text FontName:(NSString *)name Size:(int)size TextColor:(UIColor*)textColor Rect:(CGRect)rect Align:(NSTextAlignment)align ifBool:(BOOL)ifBool;
 +(UIImageView *)creatImgeViewRect:(CGRect)rect Color:(UIColor *)color Img:(NSString *)image alpha:(CGFloat)alpha;
 #pragma mark 创建textField
 +(UITextField*)createTextFieldFrame:(CGRect)frame Placeholder:(NSString*)placeholder
